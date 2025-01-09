@@ -1,0 +1,67 @@
+.home { text-align: center;
+
+}
+
+.container {
+
+}
+
+h1,p {
+    margin: 0;
+}
+
+.home-tittle {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 52.73px;
+    color: var(--color-black);
+    margin: 45px 0 25px 0;
+}
+
+.home-description {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.09px;
+    margin: 0px 0px 35px 0px;
+}
+
+.home-image { 
+    height: 535px;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+@media (max-width: 480px) {
+    
+.home-tittle {
+    max-width: 250px;
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 37.5px;
+    text-align: left;
+    margin: 45px 0 25px 0;
+}
+
+.home-description {
+    
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+    text-align: left;
+    margin: 0px 0px 35px 0px;
+}
+
+.home-image { 
+    width: 315px;
+    height: 490px;
+    top: 268px;
+    left: 30px;
+    gap: 0px;
+    opacity: 0px;
+    object-fit: cover;
+}
+
+}
