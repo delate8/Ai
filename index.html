@@ -16,33 +16,135 @@
             <nav class="nav" aria-label="header navigation">
                 <ul class="nav-list">
                         <li>
-                            <a href="" class="nav-link" aria-label="link to home">Home</a>
+                            <a href="#home-id" class="nav-link" aria-label="link to home">Home</a>
                         </li>
                         <li>
-                            <a href="" class="nav-link" aria-label="link to about">About</a>
+                            <a href="#about-id" class="nav-link" aria-label="link to about">About</a>
                         </li>
                         <li>
-                            <a href="" class="nav-link" aria-label="link to history">History</a>
+                            <a href="#history-id" class="nav-link" aria-label="link to history">History</a>
                         </li>
                         <li>
-                            <a href="" class="nav-link" aria-label="link to portfolio">Portfolio</a>
+                            <a href="#portfolio-id" class="nav-link" aria-label="link to portfolio">Portfolio</a>
                         </li>
                         <li>
-                            <a href="" class="nav-link" aria-label="link to contacts">Contacts</a>
+                            <a href="#contacts-id" class="nav-link" aria-label="link to contacts">Contacts</a>
                         </li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <div class="mobile-navigation" aria-label="mobile-navigation">
+        <label for="toggler-id" aria-label="mobile-navigation close-open">
+            <svg class="mobile-navigation-burger" aria-label="burger icon">
+                <use href="webp/sprites.svg#burger-icon"></use>
+            </svg>
+        </label>
+        <input type="checkbox" id="toggler-id" class="mobile-navigation-toggler">
+        <nav class="nav-mobile" aria-label="header navigation mobile">
+            <ul class="nav-list-mobile">
+                    <li>
+                        <a href="#home-id" class="nav-link-mobile" aria-label="link to home mobile">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about-id" class="nav-link-mobile" aria-label="link to about mobile">About</a>
+                    </li>
+                    <li>
+                        <a href="#history-id" class="nav-link-mobile" aria-label="link to history mobile">History</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio-id" class="nav-link-mobile" aria-label="link to portfolio mobile">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contacts-id" class="nav-link-mobile" aria-label="link to contacts mobile">Contacts</a>
+                    </li>
+            </ul>
+            <label for="toggler-id"  class="nav-mobile-close" aria-label="mobile-navigation close-open">
+                <svg class="mobile-navigation-cross" aria-label="cross icon">
+                    <use href="webp/sprites.svg#cross-icon"></use>
+                </svg>
+            </label>
+        </nav>
+    </div>
+
     <main aria-label="main">
-        <section class="home" aria-label="home section">
+
+        <section class="home" aria-label="home section" id="home-id">
             <div class="container">
                 <h1 class="home-tittle">Ivan Constantinovich Aivazovskiy</h1>
                 <p class="home-description" aria-label="home description">Russian Marine Painter of Armenian origin, collector, philantrop</p>
                 <img src="/webp/portrait 1.webp" alt="Portret of Painter" class="home-image">
             </div>
         </section>
+
+        <section class="about" aria-label="about section" id="about-id">
+            <div class="container">
+                <h2 class="about-tittle">About</h2>
+                    <p class="about-text1" aria-label="about description rus">
+                        Ива́н Константи́нович Айвазо́вский – русский живописец-маринист армянского происхождения, коллекционер, меценат.
+                    </p>
+                    <p class="about-text2" aria-label="about description rus2">
+                        Будучи художником с мировой известностью, Иван Константинович Айвазовский предпочитал жить и работать на своей родине — в Крыму. Айвазовский наиболее известен своими морскими пейзажами, которые составляют больше половины его работ. Художник считается одним из величайших маринистов всех времён.
+                    </p>
+                        <hr class="divider">
+                    <p class="about-text3" aria-label="about description eng1">
+                        Ivan Konstantinovich Aivazovsky - Russian marine painter of Armenian origin, collector, philanthropist.
+                    </p>
+                    <p class="about-text4" aria-label="about description eng2">
+                        Being a world famous artist, Ivan Konstantinovich Aivazovsky preferred to live and work in his homeland - in the Crimea. Aivazovsky is best known for his seascapes, which make up more than half of his work. The artist is considered one of the greatest marine painters of all time.
+                    </p>
+            </div>
+        </section>
+        <section class="history" aria-label="history section" id="history-id">
+            <div class="container">
+                <h2 class="history-tittle" aria-label="history tittle">History</h2>
+                <img src="./webp/home.webp" alt="home of Aivazovskiy" class="image-ai-home">Дом в котором родился Айвазовский | The house where Aivazovsky was born </img>
+            </div>
+        </section>
+        <section class="portfolio" aria-label="portfolio section" id="portfolio-id">
+            <div class="container">
+                <h2 class="portfolio-title">Portfolio</h2>
+                <img src="/webp/winter.webp" alt="Winter wagon train on the way, 1857" class="portfolio-image">Зимний обоз в пути, 1857 г. | Winter wagon train on the way, 1857</img>
+                <img src="/webp/rainbow.webp" alt="Rainbow, 1873" class="portfolio-image">Радуга, 1873 г. | Rainbow, 1873</img>
+                <img src="/webp/neo.webp" alt="Gulf of Naples in the morning, 1893" class="portfolio-image">Неаполитанский залив утром, 1893 г. | Gulf of Naples in the morning, 1893</img>
+            </div>
+        </section>
     </main>
+    <footer class="contacts" aria-label="contacts section" id="contacts-id">
+        <div class="container">
+            <h2 class="contacts-title">Contacts</h2>
+            <button class="contacts-button">
+                <a href="https://ayvazovskiy.su" class="button-link" target="_blank">ayvazovskiy.su</a>
+            </button>
+
+            <address class="socials" aria-label="social icons">
+                <a href="https://youtube.com" target="_blank" aria-label="link to youtube">
+                    <svg class="social-icon" aria-label="youtube icon">
+                        <use href="webp/sprites.svg#youtube-icon"></use>
+                    </svg>
+                </a>
+                <a href="https://linkedin.com" target="_blank" aria-label="link to linkedin">
+                    <svg class="social-icon" aria-label="linkedin icon">
+                        <use href="webp/sprites.svg#linkedin-icon"></use>
+                    </svg>
+                </a>
+                <a href="https://instagram.com" target="_blank" aria-label="link to instagram">
+                    <svg class="social-icon" aria-label="instagram icon">
+                        <use href="webp/sprites.svg#instagram-icon"></use>
+                    </svg>
+                </a>
+                <a href="https://facebook.com" target="_blank" aria-label="link to facebook">
+                    <svg class="social-icon" aria-label="facebook icon">
+                        <use href="webp/sprites.svg#facebook-icon"></use>
+                    </svg>
+                </a>
+            </address>
+
+            <p class="contacts-info" aria-label="just for notice">
+                More works you can see in these social networks
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
